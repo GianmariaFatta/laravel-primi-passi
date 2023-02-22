@@ -17,4 +17,14 @@ Route::get('/', function () {
     $hello = 'Helloworld';
     return view('home', compact ('hello'));
 });
+Route::get('/teachers', function () {
+    $teachers = ['Marco Lanci',"Enrico",'Jacopo'];
+    return view('teachers', compact ('teachers'));
+})->name('teachers');
 
+Route::get('/teacher/{index}', function ($index) {
+    $teachers = ['Marco Lanci',"Enrico",'Jacopo'];
+    $teacher = $teachers[$index];
+
+    return view('teacher', compact('teacher'));
+})->name('teacher');

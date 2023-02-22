@@ -7,7 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Laravel {{$hello}} </h1>
-   <a href="{{route ('teachers')}}"><h3>Boolean teachers</h3></a> 
+    <h1> {{$teacher}}</h1>
 </body>
 </html>
